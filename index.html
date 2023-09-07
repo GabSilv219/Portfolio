@@ -19,9 +19,9 @@
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="#" class="nav__logo">
-               <span class="nav__logo-circle">G</span>
-               <span class="nav__logo-name">Gab Silv.</span>
+            <a href="#home" class="nav__logo">
+               <span class="nav__logo-circle" href="#home">G</span>
+               <span class="nav__logo-name" href="#home">Gab Silv.</span>
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -31,7 +31,7 @@
 
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#home" class="nav__link">Início</a>
+                     <a href="#home" class="nav__link active-link">Início</a>
                   </li>
                   <li class="nav__item">
                      <a href="#about" class="nav__link">Sobre mim</a>
@@ -40,7 +40,7 @@
                      <a href="#projects" class="nav__link">Projetos</a>
                   </li>
                   <li class="nav__item">
-                     <a href="#contact" class="nav__link">Contatos</a>
+                     <a href="#contact" class="nav__link nav__link-button">Contatos</a>
                   </li>
                </ul>
 
@@ -51,6 +51,9 @@
             </div>
 
             <div class="nav__buttons">
+               <!-- Theme button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+
                <!-- Toggle Button -->
                <div class="nav__toggle" id="nav-toggle">
                   <i class="ri-menu-4-line"></i>
@@ -95,16 +98,16 @@
 
                <div class="home__info">
                   <p class="home__description">
-                     <b>Olá</b> me chamo Gabriel Silva, desenvolvedor Fullstack Angular, 
-                     Node e express, saiba mais sobre mim
+                     <b>Olá</b> me chamo Gabriel Silva, 20 anos, desenvolvedor Fullstack Angular, 
+                     Node e express, saiba mais sobre mim.
                   </p>
 
                   <a href="#about" class="home__scroll">
-                     <div class="home__scroll-box">
+                     <div class="home__scroll-box" href="#about">
                         <i class="ri-arrow-down-s-line" href="#about"></i>
                      </div>
 
-                     <span class="home__scroll-text">Scroll Down</span>
+                     <span class="home__scroll-text" href="#about">Scroll Down</span>
                   </a>
                </div>
 
@@ -133,7 +136,7 @@
                <div class="about__info">
                   <p class="about__description">
                      <i class="ri-terminal-box-line"></i>
-                     Desenvolvendo interfaces e APIs com Javascript/Typescript desde 2023
+                     <b>Desenvolvendo</b> interfaces e APIs com Javascript/Typescript desde 2023
                   </p>
                   <p class="about__description">
                      <i class="ri-graduation-cap-line"></i>
@@ -151,7 +154,7 @@
                   <ul class="about__list">
                      <li class="about__item">
                         <b>Minhas Skills:</b> HTML, CSS, Javascript, Angular, 
-                        Typescript, Node, Sequelize, Bootstrap, React Native,
+                        Typescript, Node, Sequelize, MySQL, Bootstrap, React Native,
                         Git & GitHub.
                      </li>
                   </ul>
@@ -161,7 +164,6 @@
                         <i class="ri-send-plane-line" href="#contact"></i>
                         Contate-me
                      </a>
-
                      <a href="https://www.linkedin.com/in/gab-silv-6a481028b/" target="_blank" class="button__ghost">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
@@ -251,10 +253,17 @@
                   </div>
 
                   <div class="projects__content">
+                     <div class="projects__techs">
+                        <img src="https://portfolio-gold-three-51.vercel.app/ts.svg" alt="Typescript" title="Typescript" class="projects__tech-typescript">
+                        <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="Angular" title="Angular" class="projects__tech">
+                        <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" alt="Sequelize" title="Sequelize" class="projects__tech">
+                        <img src="https://portfolio-gold-three-51.vercel.app/mysql.svg" alt="MySQL" title="MySQL" class="projects__tech">
+                     </div>
                      <h3 class="projects__subtitle">Website</h3>
                      <h2 class="projects__title">CRUD_products</h2>
                      <p class="projects__description">
                         Aplicação onde é possível registrar produtos,
+                        com seu nome, descrição, preço e estoque,
                         editá-los e excluí-los, assim formando uma lista que 
                         é renderizada a partir de requests de uma API externa.
                      </p>
@@ -276,12 +285,18 @@
                   </div>
 
                   <div class="projects__content">
+                     <div class="projects__techs">
+                        <img src="https://portfolio-gold-three-51.vercel.app/ts.svg" alt="Typescript" title="Typescript" class="projects__tech-typescript">
+                        <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="Angular" title="Angular" class="projects__tech">
+                        <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" alt="Sequelize" title="Sequelize" class="projects__tech">
+                        <img src="https://portfolio-gold-three-51.vercel.app/mysql.svg" alt="MySQL" title="MySQL" class="projects__tech">
+                     </div>
                      <h3 class="projects__subtitle">Website</h3>
                      <h2 class="projects__title">Moments</h2>
                      <p class="projects__description">
                         Aplicação inspirada no instagram onde é possível publicar
                         seus momentos inesquecíveis, compartilhar com os amigos e
-                        comentar sobre, possui um sistema completo de CRUD e upload de imagens.
+                        comentar, possui um sistema completo de CRUD e upload de imagens.
                      </p>
                   </div>
 
@@ -301,6 +316,11 @@
                   </div>
 
                   <div class="projects__content">
+                     <div class="projects__techs">
+                        <img src="https://portfolio-gold-three-51.vercel.app/ts.svg" alt="Typescript" title="Typescript" class="projects__tech-typescript">
+                        <img src="https://portfolio-gold-three-51.vercel.app/mobile.svg" alt="
+                        React Native" title="React Native" class="projects__tech">
+                     </div>
                      <h3 class="projects__subtitle">App</h3>
                      <h2 class="projects__title">Seekpet</h2>
                      <p class="projects__description">
@@ -374,7 +394,6 @@
                            <i class="ri-send-plane-line"></i> Enviar Mensagem 
                         </button>
                      </form>
-                  </div>
                </div>
 
                <div class="contact__social">
@@ -410,14 +429,33 @@
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#home" class="footer__link">Início</a>
+               </li>
+               <li>
+                  <a href="#about" class="footer__link">Sobre mim</a>
+               </li>
+               <li>
+                  <a href="#projects" class="footer__link">Projetos</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; All Rights Reserved By 
+               <a href="#home">Gab Silv.</a>
+            </span>
+         </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#home" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line" href="#home"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="js/raw.githubusercontent.com_jlmakes_scrollreveal_master_dist_scrollreveal.min.js"></script>
       
       <!--=============== EMAIL JS ===============-->
       <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
