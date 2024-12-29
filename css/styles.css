@@ -747,7 +747,7 @@ body.dark-theme{
 
 .projects__image{
   row-gap: inline;
-  position: relative;
+  position: absolute;
   margin-bottom: .75rem;
 }
 
